@@ -1,9 +1,10 @@
 //Bai 1
-let str= "Quý, Nam, Lan, Hùng, Nam";
+let str = "Quý, Nam, Lan, Hùng, Nam";
 let students = str.split(", ");
-console.log("Mảng students",students);
-students.reverse(); 
-console.log("Mảng khi đảo ngược",students);
+console.log("Mảng ban đầu:", students);
+let reversedStudents = students.slice().reverse();
+console.log("Mảng sau khi đảo ngược:", reversedStudents);
+console.log("Mảng gốc:", students);
 if (students.includes("Lan")){
   console.log("Tên Lan tồn tại trong mảng");
 } else {
@@ -18,3 +19,4 @@ for (let value of prices){
 for (let index in prices){
   console.log(index);
 }
+
